@@ -55,11 +55,11 @@
 
       // Bounce off the walls
       if (x + logoWidth >= canvas.width || x <= 0) {
-        dx = -dx;
+        dx = -dx * (Math.random() * 2);
         changeColor();
       }
       if (y + logoHeight >= canvas.height || y <= 0) {
-        dy = -dy;
+        dy = -dy * (Math.random() * 2);
         changeColor();
       }
 
